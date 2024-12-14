@@ -9,3 +9,4 @@ langchain_text_splitters == 0.3.2
 unstructured == 0.16.5
 unstructured[all-docs]
 streamlit == 1.40.1
+sqlite3
