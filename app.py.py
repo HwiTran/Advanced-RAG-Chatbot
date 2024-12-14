@@ -13,6 +13,8 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain.storage import InMemoryStore
 from langchain.retrievers import ParentDocumentRetriever, MultiQueryRetriever
 
+
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 
@@ -21,6 +23,10 @@ MODEL_NAME = "gemma2:latest"
 EMBEDDING_MODEL = "bge-m3:latest"
 VECTOR_STORE_NAME = "simple-rag"
 PERSIST_DIRECTORY = "./chroma_db"
+
+#Pull model
+ollama.pull(EMBEDDING_MODEL)
+ollama.pull(MODEL_NAME)
 
 def ingest_document(file_or_url, content_type):
     """Load PDF or URL documents."""

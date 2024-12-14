@@ -10,3 +10,4 @@ unstructured == 0.16.5
 unstructured[all-docs]
 streamlit == 1.40.1
 onnx==1.16.1
+pysqlite3-binary
