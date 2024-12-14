@@ -11,8 +11,8 @@ from langchain_ollama import ChatOllama
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.runnables import RunnablePassthrough
 from langchain.storage import InMemoryStore
-from langchain.retrievers import ParentDocumentRetriever, MultiQueryRetriever
-
+from langchain.retrievers import MultiQueryRetriever
+import ollamaollama
 
 
 # Configure logging
