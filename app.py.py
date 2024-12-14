@@ -19,8 +19,8 @@ import ollama
 logging.basicConfig(level=logging.INFO)
 
 # Constants
-MODEL_NAME = "gemma2:latest"
-EMBEDDING_MODEL = "bge-m3:latest"
+MODEL_NAME = "gemma2"
+EMBEDDING_MODEL = "bge-m3"
 VECTOR_STORE_NAME = "simple-rag"
 PERSIST_DIRECTORY = "./chroma_db"
 
